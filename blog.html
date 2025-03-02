@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div>
+    <div class="flex justify-between items-center mb-6 bg-gray-50 p-4 rounded-lg shadow-md">
+        <h1 class="text-xl font-bold flex items-center"><img src="assets/logo.png" class="h-8" alt="">Dev<span
+                class="text-blue-600">Board</span></h1>
+        <div class="flex items-center space-x-3">
+        </div>
+        <a href="index.html"><button class="complete-btn bg-blue-600 text-white px-3 py-3 rounded-lg text-m">Back to Desk</button></a>
+    </div>
+</div>
+
+<div class="grid gap-4">
+
+<div class="bg-gray-50 p-4 rounded-lg shadow-md">
+    <H1>Question-1: What are the different ways to select an element in the DOM?</H1>
+
+    <p>You can use document.getElementById to select one element by its ID. If you want to select multiple elements, you can use document.getElementsByClassName. document.getElementsByTagName, lets us select elements by their tag name. you can also use document.querySelector</p>
+</div>
+
+<div class="bg-gray-50 p-4 rounded-lg shadow-md">
+    <H1>Question-2: What is the difference between innerHTML, innerText, and textContent?</H1>
+
+    <p>The innerHTML property is used to get or set the HTML content inside an element, including any tags. On the other hand, The innerText property,only deals with the visible text inside an element.</p>
+</div>
+
+<div class="bg-gray-50 p-4 rounded-lg shadow-md">
+    <H1>Question-3: What is event delegation in the DOM?</H1>
+
+    <p>Event delegation is a technique where you add a single event listener to a parent element instead of adding multiple listeners to individual child elements.</p>
+</div>
+
+<div class="bg-gray-50 p-4 rounded-lg shadow-md">
+
+    <H1>Question-4: What is event bubbling in the DOM?</H1>
+
+    <p>Event bubbling is a feature in the DOM where an event starts from the target element and then "bubbles up" through its parent elements.</p>
+
+</div>
+
+<div class="bg-gray-50 p-4 rounded-lg shadow-md">
+
+    <H1>Question-5: How do you create, add, and remove elements using JavaScript?</H1>
+
+    <p>To create a new element in JavaScript, we use document.createElement, once created, you can add the element to the DOM using appendChild(). To remove an element, you use removeChild().
+    </p>
+
+</div>
+
+</div>
+</body>
+</html>

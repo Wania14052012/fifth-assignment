@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <div class="flex justify-between items-center mb-6 bg-gray-50 p-4 rounded-lg shadow-md">
+        <h1 class="text-xl font-bold flex items-center"><img src="assets/logo.png" class="h-8" alt="">Dev<span
+                class="text-blue-600">Board</span></h1>
+        <div class="flex items-center space-x-3">
+
+            <div class="bg-white text-blue-600 px-3 py-1 rounded-full flex items-center gap-1"><img
+                    src="assets/checkbox.png" class="h-4" alt=""><span class="increase">23</span></div>
+            <div><img src="assets/theme-btn.png" class="theme-btn" alt=""></div>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-2 max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md min-h-screen">
+            <div class="grid grid-cols-3 gap-4 justify-around">
+                <div class="bg-gray-100 p-4 rounded-lg text-center">
+                    <p class="text-lg font-semibold">Task Assigned</p>
+                    <p class="text-2xl font-bold decrease">6</p>
+                </div>
+
+                <a href="blog.html">
+                    <div class="bg-blue-500 text-white p-4 rounded-lg text-center">
+                        <p class="text-lg font-semibold flex items-center">
+                            <img src="assets/board.png" alt=""> Discover Something New Today!
+                        </p>
+                    </div>
+                </a>
+                <div class="bg-gray-100 p-4 rounded-lg text-center flex items-center justify-center">
+                    <p class="text-lg font-semibold flex items-center gap-1">
+                        <img src="assets/calender.png" alt="">
+                        <span id="current-date"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 mt-6">
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold">Fix Mobile Button Issue</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <p class="text-sm text-gray-500">Deadline: 21 March 2025</p>
+                    <button class="complete-btn bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold">Add Pay Success Modal</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <p class="text-sm text-gray-500">Deadline: 25 March 2025</p>
+                    <button class="complete-btn bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold">Add New Reaction</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <p class="text-sm text-gray-500">Deadline: 31 March 2025</p>
+                    <button class="complete-btn bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold">Fix Video Loading Issue</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <p class="text-sm text-gray-500">Deadline: 21 March 2025</p>
+                    <button class="complete-btn bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold">Integrate AI Search</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <p class="text-sm text-gray-500">Deadline: 01 April 2025</p>
+                    <button class="complete-btn bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                        Completed
+                    </button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold">Review Ami Probashi Site</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <p class="text-sm text-gray-500">Deadline: 5 May 2025</p>
+                    <button class="complete-btn bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">
+                        Completed
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex mb-6 bg-gray-50 p-4 rounded-lg shadow-md">
+            <div>
+                <div class="flex gap-1 justify-center items-center">
+                    <img src="assets/activity.png" alt="">
+                    <h2 class="font-bold text-lg">Activity Log</h2>
+                </div>
+                <button id="clear-log" class="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm mt-2">
+                    Clear History
+                </button>
+                <ul id="activity-log" class="mt-2 text-m text-gray-700"></ul>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
